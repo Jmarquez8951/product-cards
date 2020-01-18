@@ -1,6 +1,15 @@
 body {
-    background-color: red;
+    font-family: 'Mukta', Arial, Helvetica, sans-serif;
 }
+
+.default-primary-color    { background: #D32F2F; }
+.dark-primary-color { background: #F44336; }
+.light-primary-color   { background: #FFCDD2; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #448AFF; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }
 
 img {
     width: 300px;
@@ -8,8 +17,31 @@ img {
     margin: auto;
 }
 
-.title {
+.first-section {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.first-sold .sold-out {
+    position: absolute;
+    bottom: 50%;
+    left: -20%;
+}
+
+.second-sold .sold-out {
+    position: absolute;
+    bottom: 50%;
+    left: -20%;
+}
+
+.back-image {
+    position: relative;
+}
+
+.cards header .title {
     text-align: center;
+    border-bottom: dotted lightblue;
 }
 
 .container {
@@ -23,11 +55,29 @@ img {
     border: 1px solid lightblue;
     box-shadow: 5px 5px black;
     flex: 0 0 30%;
-    margin: 5px;
+    margin: 10px 10px;
 }
 
 .cards p {
     text-align: justify;
+}
+
+.first-section {
+    border-bottom: 2px solid lightblue;
+}
+
+.first-section p {
+    padding: 5px ;
+}
+
+.first-section h3 {
+    background-color: grey;
+    color: yellow;
+    padding: 5px;
+}
+
+.second-section {
+    border-bottom: 1px solid lightblue;
 }
 
 .second-section p {
@@ -37,10 +87,13 @@ img {
 
  .second-section h4 {
     font-weight: bold;
+    padding: 10px;
 }
 
-.second-section footer {
-    background-color: grey;
-    color: yellow;
+.third-section h2 {
     padding: 5px;
+}
+
+.third-section h4 {
+    padding: 10px;
 }
